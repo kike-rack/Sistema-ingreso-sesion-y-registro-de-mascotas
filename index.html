@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Modular 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"/>
+</head>
+<body class="container py-4">
+    <h1 class="text-center mb-4"> Sistema veterinario</h1>
+
+    <!-- Mensajes -->
+    <div id="mensajes"></div>
+
+    <!-- Ingreso -->
+    <div class="card mb-4">
+        <div class="card-header"> Iniciar Sesion </div>
+        <div class="card-body">
+            <form id="formLogin">
+                <div class="mb-3">
+                    <input type="text" id="usuario" class="form-control" placeholder="Usuario" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" id="password" class="form-control" placeholder="Contraseña" required>
+                </div>
+                <button class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Formulario Mascota -->
+    <div class="card mb-4" id="seccionMascota" style="display:none;">
+        <div class="card-header">Registrar Mascota</div>
+        <div class="card-body">
+            <form id="formMascota">
+                <input class="form-control mb-2" id="nombreMascota" placeholder="Nombre mascota" required>
+                <input class="form-control mb-2" id="tutorMascota" placeholder="Tutor" required>
+                <input class="form-control mb-2" id="evolucionMascota" placeholder="Evolucion médica" required>
+                <button class="btn btn-success">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lista de Pacientes -->
+    <div class="card" id="seccionLista" style="display: none;">
+        <div class="card-header">Pacientes registrados</div>
+        <ul class="list-group list-group-flush" id="listaPacientes"></ul>
+    </div>
+
+    </div>
+
+
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>
