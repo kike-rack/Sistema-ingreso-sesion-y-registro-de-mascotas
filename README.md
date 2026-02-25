@@ -5,4 +5,4 @@ Este es un trabajo de modulo 5 para el Bootcamp de Talento Digital. Emula el ini
 
 ## Pendientes
 - Se requiere revisar cuando en el registro se ingresan datos incorrectos
-- 
+
